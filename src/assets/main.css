@@ -1,35 +1,44 @@
-@import './base.css';
+@import "tailwindcss";
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
-}
+/*
+ * The site is always light (white background, black text), regardless of the
+ * visitor's system theme. `dark:` styles only apply if <html> gets a `dark`
+ * class, which it currently doesn't.
+ */
+@custom-variant dark (&:where(.dark, .dark *));
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+@layer base {
+  html {
+    color-scheme: light;
   }
-}
 
-@media (min-width: 1024px) {
+  html.dark {
+    color-scheme: dark;
+  }
+
   body {
-    display: flex;
-    place-items: center;
+    @apply bg-white text-zinc-700 antialiased dark:bg-zinc-950 dark:text-zinc-300;
   }
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+  ::selection {
+    @apply bg-zinc-200 dark:bg-zinc-700;
+  }
+}
+
+@layer components {
+  .link {
+    @apply text-zinc-900 underline decoration-zinc-300 underline-offset-4 transition-colors hover:decoration-zinc-900 focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900 dark:text-zinc-100 dark:decoration-zinc-600 dark:hover:decoration-zinc-100 dark:focus-visible:outline-zinc-100;
+  }
+
+  .nav-link {
+    @apply text-zinc-500 transition-colors hover:text-zinc-900 focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 dark:focus-visible:outline-zinc-100;
+  }
+
+  .nav-link-active {
+    @apply text-zinc-900 dark:text-zinc-100;
+  }
+
+  .section-label {
+    @apply text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100;
   }
 }
