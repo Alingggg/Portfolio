@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import { profile, type Project } from '@/data/profile'
 
-const categories: Project['category'][] = ['Web & Mobile', 'Data Engineering']
+const categories: Project['category'][] = ['Web & Mobile', 'Data']
 const groups = categories
   .map((name) => ({ name, projects: profile.projects.filter((p) => p.category === name) }))
   .filter((group) => group.projects.length > 0)
 
-/** Phone screenshots are taller than wide and get laid out side by side. */
 const isPortrait = (project: Project) =>
   project.images?.some((image) => image.height > image.width) ?? false
 </script>
@@ -16,7 +15,6 @@ const isPortrait = (project: Project) =>
     <h1 class="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">Projects</h1>
   </header>
 
-  <!-- Experience -->
   <section aria-labelledby="experience" class="mt-12">
     <h2 id="experience" class="section-label">Experience</h2>
     <ul class="mt-6 space-y-6">
@@ -61,7 +59,6 @@ const isPortrait = (project: Project) =>
           </div>
         </div>
 
-        <!-- Screenshots: one wide image edge to edge (negative margins cancel the card padding), or phone screens side by side on a tinted panel -->
         <div
           v-if="project.images?.length"
           class="-mx-5 mt-4 mb-5 border-y border-zinc-200 sm:-mx-6 sm:mb-6 dark:border-zinc-800"

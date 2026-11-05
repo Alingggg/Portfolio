@@ -1,5 +1,5 @@
-import type { SimpleIcon } from 'simple-icons'
 import {
+  type SimpleIcon,
   siBetterauth,
   siDatabricks,
   siDrizzle,
@@ -9,8 +9,6 @@ import {
   siZod,
 } from 'simple-icons'
 
-// Full-color logos from Devicon (https://devicon.dev). Vite turns each import
-// into a URL and only bundles the logos used here.
 import axios from 'devicon/icons/axios/axios-plain.svg'
 import airflow from 'devicon/icons/apacheairflow/apacheairflow-original.svg'
 import bun from 'devicon/icons/bun/bun-original.svg'
@@ -43,28 +41,17 @@ import veevalidate from 'devicon/icons/veevalidate/veevalidate-original.svg'
 import vercel from 'devicon/icons/vercel/vercel-original.svg'
 import vue from 'devicon/icons/vuejs/vuejs-original.svg'
 
-/** A full-color logo image (Devicon). */
 export interface ImageIcon {
   src: string
 }
 
-/** Generic icons for skills that have no logo. */
 export type GenericIcon = 'database' | 'code' | 'terminal'
 
-/**
- * Devicon logo when there is one, otherwise a single-color Simple Icons logo
- * (https://simpleicons.org) in its brand color, otherwise a generic icon.
- */
 export type SkillIconSource = ImageIcon | SimpleIcon | GenericIcon
 
 const img = (src: string): ImageIcon => ({ src })
 
-/**
- * Icon for each skill name used in `profile.skills`.
- * A skill missing from this map is shown without an icon.
- */
 export const skillIcons: Record<string, SkillIconSource> = {
-  // Frontend
   TypeScript: img(typescript),
   JavaScript: img(javascript),
   HTML: img(html),
@@ -80,36 +67,32 @@ export const skillIcons: Record<string, SkillIconSource> = {
   Zod: siZod,
   Axios: img(axios),
 
-  // Backend
   'Node.js': img(nodejs),
   Bun: img(bun),
   'Express.js': img(express),
   'REST APIs': 'code',
   JWT: img(jwt),
-  'Better Auth': siBetterauth,
+  'Better Auth': { ...siBetterauth, hex: '18181B' },
   Supabase: img(supabase),
-  'Drizzle ORM': siDrizzle,
+  'Drizzle ORM': { ...siDrizzle, hex: 'B1DE47' },
   Mongoose: img(mongoose),
   Redis: img(redis),
 
   PostgreSQL: img(postgresql),
   MongoDB: img(mongodb),
 
-  // Data engineering
   Python: img(python),
   SQL: 'database',
   PySpark: img(spark),
   pandas: img(pandas),
   ClickHouse: img(clickhouse),
   Databricks: siDatabricks,
-  'Apache Airflow': img(airflow),
+  'Airflow': img(airflow),
   'ETL/ELT pipelines': 'code',
 
-  // Mobile
   'React Native': img(react),
   Expo: img(expo),
 
-  // Tools & platforms
   Git: img(git),
   GitHub: img(github),
   Docker: img(docker),
