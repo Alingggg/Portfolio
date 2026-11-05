@@ -41,4 +41,14 @@
   .section-label {
     @apply text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100;
   }
+
+  /* Bordered box around one project or role on the Projects page. */
+  .card {
+    @apply rounded-xl border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900;
+  }
+
+  /* One item in a tech-stack list. */
+  .tech-tag {
+    @apply rounded-md bg-zinc-100 px-2 py-0.5 text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300;
+  }
 }
