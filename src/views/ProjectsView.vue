@@ -46,7 +46,8 @@ const isPortrait = (project: Project) =>
       >
         <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
           <h3 class="font-medium text-zinc-900 dark:text-zinc-100">{{ project.name }}</h3>
-          <div v-if="project.live || project.source" class="flex gap-4 text-sm">
+          <div v-if="project.period || project.live || project.source" class="flex flex-wrap items-baseline gap-4 text-sm">
+            <span v-if="project.period" class="text-zinc-500 dark:text-zinc-400">{{ project.period }}</span>
             <a v-if="project.live" :href="project.live" class="link" target="_blank" rel="noopener noreferrer">Live</a>
             <a
               v-if="project.source"

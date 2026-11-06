@@ -20,6 +20,7 @@ export interface Project {
   tech: string[]
   live?: string
   source?: string
+  period?: string
   images?: ProjectImage[]
 }
 
@@ -83,6 +84,7 @@ export const profile = {
     {
       title: 'Frontend Developer Intern',
       org: 'QAME',
+      period: 'July – August 2026',
       summary:
         'Built the Vue and TypeScript frontend for a DepEd CALABARZON activity management and evaluation platform, including role-based dashboards, calendars, and public evaluation forms shared through links and QR codes.',
       tech: ['Vue', 'TypeScript', 'Docker', 'TanStack Query', 'VeeValidate', 'Tailwind CSS', 'shadcn/ui'],
@@ -103,6 +105,7 @@ export const profile = {
         'Airflow pipeline that loads Binance BTCUSDT candle data into ClickHouse as raw JSON snapshots, then transforms it with pandas into a typed Silver table and a Gold view of 5-minute price and volume aggregates.',
       tech: ['Python', 'Airflow', 'ClickHouse', 'pandas', 'Docker'],
       source: 'https://github.com/Alingggg/binance',
+      period: 'August 2026',
     },
     {
       name: 'Movie Analytics Pipeline',
@@ -111,6 +114,7 @@ export const profile = {
         'Three-stage PySpark pipeline on Databricks that ingests MovieLens 32M and IMDb files into Bronze and Silver Delta tables, then builds a movie dimension, three fact tables, a genre bridge, and four analytics marts, run as a Databricks job.',
       tech: ['Python', 'PySpark', 'Databricks', 'Delta Lake'],
       source: 'https://github.com/Alingggg/music-analytics',
+      period: 'September 2026',
     },
     {
       name: 'Microsoft Learn Pipeline',
@@ -119,6 +123,7 @@ export const profile = {
         'Python ETL pipeline that ingests the Microsoft Learn catalog API into PostgreSQL, keeping dated raw snapshots as JSONB and loading 12 catalog sections into queryable tables.',
       tech: ['Python', 'PostgreSQL', 'Docker'],
       source: 'https://github.com/Alingggg/microsoft-learn',
+      period: 'September 2026',
     },
     {
       name: 'KwarTala',
@@ -127,6 +132,7 @@ export const profile = {
         'Personal finance tracker with budgets, spending analytics, and an AI assistant that manages expenses in plain language.',
       tech: ['React', 'TypeScript', 'Express', 'PostgreSQL', 'Drizzle', 'Supabase', 'Redis', 'Gemini API', 'Vercel', 'Render'],
       source: 'https://github.com/Alingggg/KwarTala',
+      period: 'July 2025 – November 2026',
       images: [
         {
           src: '/projects/kwartala.png',
@@ -143,6 +149,7 @@ export const profile = {
         'Collaborative class workspace for tasks, subjects, schedules, and shared materials, with role-based permissions and an AI assistant.',
       tech: ['React', 'TypeScript', 'Bun', 'Express', 'MongoDB', 'Mongoose', 'Redis', 'Gemini API', 'Docker'],
       source: 'https://github.com/Alingggg/Due-It',
+      period: 'August 2025 – November 2026',
       images: [
         {
           src: '/projects/dueit.png',
@@ -159,6 +166,7 @@ export const profile = {
         'Room and equipment reservation system with role-based portals, an approval workflow, and check-out and return tracking.',
       tech: ['Next.js', 'React', 'TypeScript', 'PostgreSQL', 'Drizzle ORM', 'Better Auth', 'shadcn/ui', 'Docker'],
       source: 'https://github.com/Alingggg/LabBorrow-James',
+      period: 'September – October 2026',
       images: [
         {
           src: '/projects/labborrowjames.png',
@@ -174,6 +182,7 @@ export const profile = {
       description:
         'React Native frontend for a personal finance app with budgets, recurring expenses, and weekly and monthly charts.',
       tech: ['React Native', 'Expo', 'Axios'],
+      period: 'December 2024 – January 2025',
       images: [
         {
           src: '/projects/piamontrack1.png',
