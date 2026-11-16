@@ -63,6 +63,10 @@ export const profile = {
       skills: ['React Native', 'Expo'],
     },
     {
+      name: 'Testing & CI',
+      skills: ['Vitest', 'Playwright', 'GitHub Actions'],
+    },
+    {
       name: 'Tools & Platforms',
       skills: ['Node.js', 'Bun', 'uv', 'Git', 'GitHub', 'Docker', 'WSL', 'Vercel', 'Render'],
     },
@@ -129,8 +133,8 @@ export const profile = {
       name: 'KwarTala',
       category: 'Web & Mobile',
       description:
-        'Personal finance tracker with budgets, spending analytics, and an AI assistant that manages expenses in plain language.',
-      tech: ['React', 'TypeScript', 'Express', 'PostgreSQL', 'Drizzle', 'Supabase', 'Redis', 'Gemini API', 'Vercel', 'Render'],
+        'Personal finance tracker with budgets, spending analytics, and an AI assistant that manages expenses in plain language, with Vitest and Playwright tests running in GitHub Actions CI.',
+      tech: ['React', 'TypeScript', 'Express', 'PostgreSQL', 'Drizzle', 'Supabase', 'Redis', 'Gemini API', 'Vitest', 'Playwright', 'GitHub Actions', 'Vercel', 'Render'],
       source: 'https://github.com/Alingggg/KwarTala',
       period: 'July 2025 – November 2026',
       images: [

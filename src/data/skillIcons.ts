@@ -17,6 +17,7 @@ import css from 'devicon/icons/css3/css3-original.svg'
 import docker from 'devicon/icons/docker/docker-original.svg'
 import expo from 'devicon/icons/expo/expo-original.svg'
 import express from 'devicon/icons/express/express-original.svg'
+import githubactions from 'devicon/icons/githubactions/githubactions-original.svg'
 import git from 'devicon/icons/git/git-original.svg'
 import github from 'devicon/icons/github/github-original.svg'
 import html from 'devicon/icons/html5/html5-original.svg'
@@ -27,6 +28,7 @@ import mongoose from 'devicon/icons/mongoose/mongoose-original.svg'
 import nextjs from 'devicon/icons/nextjs/nextjs-original.svg'
 import nodejs from 'devicon/icons/nodejs/nodejs-original.svg'
 import pandas from 'devicon/icons/pandas/pandas-original.svg'
+import playwright from 'devicon/icons/playwright/playwright-original.svg'
 import postgresql from 'devicon/icons/postgresql/postgresql-original.svg'
 import python from 'devicon/icons/python/python-original.svg'
 import react from 'devicon/icons/react/react-original.svg'
@@ -39,6 +41,7 @@ import typescript from 'devicon/icons/typescript/typescript-original.svg'
 import uv from 'devicon/icons/uv/uv-original.svg'
 import veevalidate from 'devicon/icons/veevalidate/veevalidate-original.svg'
 import vercel from 'devicon/icons/vercel/vercel-original.svg'
+import vitest from 'devicon/icons/vitest/vitest-original.svg'
 import vue from 'devicon/icons/vuejs/vuejs-original.svg'
 
 export interface ImageIcon {
@@ -92,6 +95,10 @@ export const skillIcons: Record<string, SkillIconSource> = {
 
   'React Native': img(react),
   Expo: img(expo),
+
+  Vitest: img(vitest),
+  Playwright: img(playwright),
+  'GitHub Actions': img(githubactions),
 
   Git: img(git),
   GitHub: img(github),
