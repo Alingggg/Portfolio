@@ -68,7 +68,7 @@ export const profile = {
     },
     {
       name: 'Tools & Platforms',
-      skills: ['Node.js', 'Bun', 'uv', 'Git', 'GitHub', 'Docker', 'WSL', 'Vercel', 'Render'],
+      skills: ['Node.js', 'Bun', 'uv', 'Git', 'GitHub', 'Docker', 'Nginx', 'AWS EC2', 'AWS S3', 'WSL', 'Vercel', 'Render'],
     },
   ] as SkillGroup[],
 
@@ -81,7 +81,7 @@ export const profile = {
   about: [
     "I'm a Computer Science student at the Polytechnic University of the Philippines – Manila, and I mostly build full-stack web apps in TypeScript, with React or Vue on the frontend and Express on the backend, using PostgreSQL or MongoDB.",
     "On the side, I've studied data and built a few pipelines with Python, PySpark, and Airflow.",
-    "Right now I'm learning AI engineering, and I'm already familiar with RAG, embeddings using OpenAI, and vector databases like ChromaDB and Pinecone. I'm also learning DevOps, including CI/CD and deploying apps to cloud VMs.",
+    "Right now I'm learning AI engineering, and I'm already familiar with RAG, embeddings using OpenAI, and vector databases like ChromaDB and Pinecone. I'm also learning DevOps and cloud.",
   ],
 
   experience: [
@@ -150,8 +150,8 @@ export const profile = {
       name: 'Due It',
       category: 'Web & Mobile',
       description:
-        'Collaborative class workspace for tasks, subjects, schedules, and shared materials, with role-based permissions and an AI assistant.',
-      tech: ['React', 'TypeScript', 'Bun', 'Express', 'MongoDB', 'Mongoose', 'Redis', 'Gemini API', 'Docker'],
+        'Collaborative class workspace for tasks, subjects, schedules, and shared materials, with role-based permissions and an AI assistant. Deployed on AWS EC2 with Docker and Nginx, with file uploads stored in S3.',
+      tech: ['React', 'TypeScript', 'Bun', 'Express', 'MongoDB', 'Mongoose', 'Redis', 'Gemini API', 'Docker', 'Nginx', 'AWS EC2', 'AWS S3'],
       source: 'https://github.com/Alingggg/Due-It',
       period: 'August 2025 – November 2026',
       images: [

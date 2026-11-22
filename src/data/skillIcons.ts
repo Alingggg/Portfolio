@@ -9,6 +9,7 @@ import {
   siZod,
 } from 'simple-icons'
 
+import aws from 'devicon/icons/amazonwebservices/amazonwebservices-original.svg'
 import axios from 'devicon/icons/axios/axios-plain.svg'
 import airflow from 'devicon/icons/apacheairflow/apacheairflow-original.svg'
 import bun from 'devicon/icons/bun/bun-original.svg'
@@ -25,6 +26,7 @@ import javascript from 'devicon/icons/javascript/javascript-original.svg'
 import jwt from 'devicon/icons/jwt/jwt-original.svg'
 import mongodb from 'devicon/icons/mongodb/mongodb-original.svg'
 import mongoose from 'devicon/icons/mongoose/mongoose-original.svg'
+import nginx from 'devicon/icons/nginx/nginx-original.svg'
 import nextjs from 'devicon/icons/nextjs/nextjs-original.svg'
 import nodejs from 'devicon/icons/nodejs/nodejs-original.svg'
 import pandas from 'devicon/icons/pandas/pandas-original.svg'
@@ -103,6 +105,9 @@ export const skillIcons: Record<string, SkillIconSource> = {
   Git: img(git),
   GitHub: img(github),
   Docker: img(docker),
+  Nginx: img(nginx),
+  'AWS EC2': img(aws),
+  'AWS S3': img(aws),
   WSL: 'terminal',
   uv: img(uv),
   Vercel: img(vercel),
